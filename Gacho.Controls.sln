@@ -9,6 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E2144254
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gacho.Controls", "src\Gacho.Controls\Gacho.Controls.fsproj", "{57E0B84B-00D9-4A04-AC08-81876CC37B7A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{094E480A-5C52-4572-B147-C784CC9B2E73}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
