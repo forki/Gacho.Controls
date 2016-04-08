@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fake", "fake", "{D5AD60A8-E
 		build.fsx = build.fsx
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gacho.Controls.Tests", "tests\Gacho.Controls.Tests\Gacho.Controls.Tests.fsproj", "{454CCC33-8EE0-4532-9E6B-5B81EED089E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,11 +37,16 @@ Global
 		{57E0B84B-00D9-4A04-AC08-81876CC37B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57E0B84B-00D9-4A04-AC08-81876CC37B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57E0B84B-00D9-4A04-AC08-81876CC37B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454CCC33-8EE0-4532-9E6B-5B81EED089E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454CCC33-8EE0-4532-9E6B-5B81EED089E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454CCC33-8EE0-4532-9E6B-5B81EED089E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454CCC33-8EE0-4532-9E6B-5B81EED089E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{57E0B84B-00D9-4A04-AC08-81876CC37B7A} = {41DA519A-F878-4870-AA38-1E73D1E7D797}
+		{454CCC33-8EE0-4532-9E6B-5B81EED089E0} = {E2144254-10B7-44C9-BA37-5C2E6311CBBC}
 	EndGlobalSection
 EndGlobal
