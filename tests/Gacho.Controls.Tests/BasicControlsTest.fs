@@ -1,5 +1,6 @@
 ﻿module BasicControlsTest
 
+open FsCheck
 open FsCheck.NUnit
 open Gacho.Controls
 open System.IO
@@ -12,6 +13,18 @@ let renderControl (ctrl : #Control) =
     textWriter.ToString()
 
 [<Property>]
-let ``Rendering of LiteralControl always generate Test`` () =
-    use control = new Literal()
-    renderControl control = "Test"
+let ``Rendering of LiteralControl with non null Text renders the same Text`` (text : NonNull<string>) =
+    use control = new Text()
+    control.Value <- text.Get
+    renderControl control = text.Get
+
+[<Property>]
+let ``Rendering of LiteralControl with null Text renders empty Text`` () =
+    use control = new Text()
+    control.Value <- null
+    renderControl control = ""
+
+[<Property>]
+let ``Rendering of LiteralControl without setting Text renders empty Text`` () =
+    use control = new Text()
+    renderControl control = ""
