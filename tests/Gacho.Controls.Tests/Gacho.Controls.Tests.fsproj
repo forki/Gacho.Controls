@@ -61,7 +61,7 @@
     <Compile Include="FsCheckAddin.fs">
       <Paket>True</Paket>
     </Compile>
-    <Compile Include="HelloWorld.fs" />
+    <Compile Include="BasicControlsTest.fs" />
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +72,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Gacho.Controls\Gacho.Controls.fsproj">
