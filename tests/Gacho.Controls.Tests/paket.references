@@ -1,4 +1,5 @@
-FsCheck
-FsCheck.Nunit
-NUnitTestAdapter
-FsUnit
+group Test
+    FsCheck
+    FsCheck.Nunit
+    NUnitTestAdapter
+    FsUnit

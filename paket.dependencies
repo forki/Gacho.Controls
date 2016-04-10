@@ -1,10 +1,19 @@
 source https://nuget.org/api/v2
-source https://ci.appveyor.com/nuget/fscheck
 
 nuget FAKE
-nuget FsCheck
-nuget FsCheck.Nunit
-nuget FsUnit <= 1.4.1
-nuget NUnit <= 2.7
-nuget NUnitTestAdapter
-nuget FSharp.Core == 3.1.2.5 redirects: force
+
+group Test
+	source https://nuget.org/api/v2
+	source https://ci.appveyor.com/nuget/fscheck
+
+	nuget FsCheck
+	nuget FsCheck.Nunit
+	nuget FsUnit <= 1.4.1
+	nuget NUnit <= 2.7
+	nuget NUnitTestAdapter
+	nuget FSharp.Core == 3.1.2.5 redirects: force
+
+group WebSite
+	source https://nuget.org/api/v2
+
+	nuget FSharp.Core redirects: force
