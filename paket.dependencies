@@ -4,5 +4,7 @@ source https://ci.appveyor.com/nuget/fscheck
 nuget FAKE
 nuget FsCheck
 nuget FsCheck.Nunit
+nuget FsUnit <= 1.4.1
+nuget NUnit <= 2.7
 nuget NUnitTestAdapter
-nuget FSharp.Core redirects: on
+nuget FSharp.Core == 3.1.2.5 redirects: force

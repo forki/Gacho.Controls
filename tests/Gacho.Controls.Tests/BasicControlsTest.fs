@@ -5,6 +5,11 @@ open FsCheck.NUnit
 open Gacho.Controls
 open System.IO
 open System.Web.UI
+open NUnit.Framework
+open FsUnit
+
+type PropertyAttribute = FsCheck.NUnit.PropertyAttribute
+type Text = Gacho.Controls.Text
 
 let renderControl (ctrl : #Control) =
     use textWriter = new StringWriter()
@@ -18,13 +23,13 @@ let ``Rendering of LiteralControl with non null Text renders the same Text`` (te
     control.Value <- text.Get
     renderControl control = text.Get
 
-[<Property>]
+[<Test>]
 let ``Rendering of LiteralControl with null Text renders empty Text`` () =
     use control = new Text()
     control.Value <- null
-    renderControl control = ""
+    renderControl control |> should equal ""
 
-[<Property>]
+[<Test>]
 let ``Rendering of LiteralControl without setting Text renders empty Text`` () =
     use control = new Text()
-    renderControl control = ""
+    renderControl control |> should equal ""
