@@ -1,2 +1,4 @@
 group WebSite
-    FSharp.Core
+	FSharp.Core
+	Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+	Microsoft.Net.Compilers

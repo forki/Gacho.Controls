@@ -1,7 +1,7 @@
 NUGET
   remote: https://www.nuget.org/api/v2
   specs:
-    FAKE (4.23.6)
+    FAKE (4.24)
 
 GROUP Test
 NUGET
@@ -26,3 +26,6 @@ NUGET
   remote: https://www.nuget.org/api/v2
   specs:
     FSharp.Core (4.0.0.1) - redirects: force
+    Microsoft.CodeDom.Providers.DotNetCompilerPlatform (1.0.1)
+      Microsoft.Net.Compilers (>= 1.0)
+    Microsoft.Net.Compilers (1.2.1)
