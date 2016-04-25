@@ -45,7 +45,10 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicControls.fs" />
+    <Compile Include="Core.Helpers.fs" />
+    <Compile Include="Basic.fs" />
+    <Compile Include="Html.Core.fs" />
+    <Compile Include="Html.Inline.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

@@ -12,6 +12,7 @@
         <gc:Text runat="server" Value="Hello World!" /><br />
         <gc:Text runat="server" Value="1 < 2 == true" Encoding="Html" /><br />
         <gc:Text runat="server" Value="<!-- Commentario! -->" Encoding="Raw" />
+        <gc:Span runat="server" Text="Hello" />
     </div>
     </form>
 </body>

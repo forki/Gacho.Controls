@@ -62,6 +62,7 @@
       <Paket>True</Paket>
     </Compile>
     <Compile Include="BasicControlsTest.fs" />
+    <Compile Include="Html.InlineTest.fs" />
     <Content Include="App.config" />
     <None Include="paket.references" />
   </ItemGroup>
