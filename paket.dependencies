@@ -2,7 +2,6 @@ source https://nuget.org/api/v2
 
 nuget FAKE
 
-
 group Test
 	source https://nuget.org/api/v2
 	source https://ci.appveyor.com/nuget/fscheck
@@ -20,3 +19,4 @@ group WebSite
 	nuget FSharp.Core redirects: force
 	nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform
 	nuget Microsoft.Net.Compilers
+	nuget Glimpse.WebForms

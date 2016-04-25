@@ -29,3 +29,8 @@ NUGET
     Microsoft.CodeDom.Providers.DotNetCompilerPlatform (1.0.1)
       Microsoft.Net.Compilers (>= 1.0)
     Microsoft.Net.Compilers (1.2.1)
+    Glimpse (1.8.6)
+    Glimpse.AspNet (1.9.2)
+      Glimpse (>= 1.8.6)
+    Glimpse.WebForms (1.1.1)
+      Glimpse.AspNet (>= 1.9.1)

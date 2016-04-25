@@ -29,11 +29,11 @@ type Span() as this =
             |> ViewState.set "Class" value
             |> ignore
     
-    override this.RenderBeginTag(writer) = 
+    override this.AddAttributesToRender(writer) = 
         let thisWriter = 
             writer |> (match this.Class with
                        | null -> id
                        | text -> HtmlTextWriter.addAttribute "class" text)
-        base.RenderBeginTag(thisWriter)
+        base.AddAttributesToRender(thisWriter)
     
     override this.RenderContents writer = writer |> HtmlTextWriter.write (HttpUtility.HtmlEncode this.Text)

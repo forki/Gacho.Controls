@@ -1,4 +1,5 @@
 group WebSite
-	FSharp.Core
-	Microsoft.CodeDom.Providers.DotNetCompilerPlatform
-	Microsoft.Net.Compilers
+FSharp.Core
+Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+Microsoft.Net.Compilers
+Glimpse.WebForms

@@ -22,6 +22,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "paket", "paket", "{EB2E6A72-484B-427D-A280-BA641EDB2A71}"
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fake", "fake", "{D5AD60A8-EC5B-4905-8BDC-7252895A90FE}"
